@@ -49,12 +49,23 @@ address {
 }
 
 .container {
-  max-width: 1080px;
+  width: 100%;
   height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
+  @media screen and (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 1200px;
+  }
 }
 
 .flex-container {
