@@ -1,0 +1,6 @@
+.section-contacts {
+background-color: #E5E5E5;
+}
+.section-contacts__container{
+    @extend %container;
+}
