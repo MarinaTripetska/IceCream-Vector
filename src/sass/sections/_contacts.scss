@@ -1,7 +1,7 @@
 .contacts__section {
   padding-top: 43px;
   padding-bottom: 56px;
-  background-image: linear-gradient(to bottom, $white-bg 15%, $pink-bg 15%);
+  background-image: linear-gradient(to bottom, $white-bg 8%, $pink-bg 8%);
 }
 .contacts__container {
   @extend %container;
@@ -29,9 +29,9 @@
   }
 }
 .card__lable {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  align-items: baseline;
+  width: fit-content;
   padding-left: 25px;
   padding-right: 25px;
 
@@ -54,26 +54,11 @@
 }
 .card__part-top{
 padding: 25px 0;
+border-bottom: 1px solid #E1E1E1;
 
-&:after{
-    display: inline-block;
-content: "";
-left: 0;
-bottom: 0;
-height: 10px;
-width: 100%;
-color: tomato;
 }
-}
-.card__part-middle{
-    padding: 25px 0;  
-}
-.card__part-bottom{
-    padding-top: 25px;
-}
-// .card__lable--margin-b {
-//     margin-bottom: 25px;
-// }
+
+
 .card__city{
     font-weight: 500;
 line-height: 1.83;
@@ -84,9 +69,32 @@ letter-spacing: 0.04em;
 }
 .card__txt{
   font-weight: 500;
-line-height: 1.2;
+line-height: 1.5;
 color: $text-cl-grey;
 }
 .card__txt--margin-b {
 color: tomato;
+}
+.card__part-middle{
+    padding: 25px 0; 
+    border-bottom: 1px solid #E1E1E1; 
+}
+.schedule--margin-b{
+  margin-bottom: 10px;
+}
+.card__days {
+  font-weight: 500;
+line-height: 1.86;
+}
+.card__time{
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  
+  color: $text-cl-pink;
+}
+
+.card__part-bottom{
+    padding-top: 25px;
 }
