@@ -1,6 +1,6 @@
 // Основные кнопки
 
-.button {
+.button--arrow {
   padding: 12px 48px;
   background: $btn-white-bg;
   border-radius: 22px;
@@ -26,15 +26,15 @@
       background: $btn-red-bg--hover;
     }
   }
+
+  &::after {
+    content: '>';
+    color: currentColor;
+    padding-left: 15px;
+  }
 }
 
 // Кнопка со стрелочкой
-
-.button--arrow::after {
-  content: '>';
-  color: currentColor;
-  padding-left: 15px;
-}
 
 .button--circle {
   width: 40px;
