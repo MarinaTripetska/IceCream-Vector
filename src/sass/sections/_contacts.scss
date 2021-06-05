@@ -1,6 +1,36 @@
-.section-contacts {
-background-color: #E5E5E5;
+.contacts__section {
+    padding-top: 43px;
+    padding-bottom: 56px;
+    background-image: linear-gradient(
+        to bottom,
+        $white-bg 15%,
+        $pink-bg 15%
+    );
 }
-.section-contacts__container{
+.contacts__container{
     @extend %container;
+
+}
+.contacts__list{
+   
+    @include flex-container;
+    flex-direction: column;
+    justify-content: center;
+@extend %list;
+}
+.contacts__card {
+
+    // width: 100%;
+
+    padding: 43px 20px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    
+    background-color: #fff;
+}
+.contacts__card:not(:last-child){
+    @media screen and(max-width: 767px){
+        margin-bottom: 30px;
+    }
+
 }
