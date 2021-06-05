@@ -1,0 +1,33 @@
+.button {
+  padding: 12px 48px;
+  background: $btn-white-bg;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  color: $text-cl-red;
+
+  &:hover,
+  &:focus {
+    background: $btn-white-bg--hover;
+  }
+
+  &--red {
+    background: $btn-red-bg;
+    color: $text-cl-white;
+
+    &:hover,
+    &:focus {
+      background: $btn-red-bg--hover;
+    }
+  }
+}
+
+.button::after {
+  content: '>';
+  color: currentColor;
+  padding-left: 15px;
+}
