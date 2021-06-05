@@ -1,0 +1,92 @@
+.contacts__section {
+  padding-top: 43px;
+  padding-bottom: 56px;
+  background-image: linear-gradient(to bottom, $white-bg 15%, $pink-bg 15%);
+}
+.contacts__container {
+  @extend %container;
+}
+.contacts__list {
+  @include flex-container;
+  flex-direction: column;
+  justify-content: center;
+  @extend %list;
+}
+.contacts__card {
+  max-width: 220px;
+//   min-height: 427px;
+  // width: 100%;
+
+  padding: 43px 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  background-color: #fff;
+}
+.contacts__card:not(:last-child) {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+.card__lable {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-radius: 4px;
+  .card__lable-txt {
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $text-cl-white;
+  }
+}
+.card__lable--color1 {
+  background: #f0d1a5;
+}
+.card__lable--color2 {
+  background: #C2E297;
+}
+.card__part-top{
+padding: 25px 0;
+
+&:after{
+    display: inline-block;
+content: "";
+left: 0;
+bottom: 0;
+height: 10px;
+width: 100%;
+color: tomato;
+}
+}
+.card__part-middle{
+    padding: 25px 0;  
+}
+.card__part-bottom{
+    padding-top: 25px;
+}
+// .card__lable--margin-b {
+//     margin-bottom: 25px;
+// }
+.card__city{
+    font-weight: 500;
+line-height: 1.83;
+letter-spacing: 0.04em;
+}
+.card__city--margin-b{
+    margin-bottom: 10px;
+}
+.card__txt{
+  font-weight: 500;
+line-height: 1.2;
+color: $text-cl-grey;
+}
+.card__txt--margin-b {
+color: tomato;
+}
