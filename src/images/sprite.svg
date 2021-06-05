@@ -1,7 +1,7 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
+<defs>
 <symbol id="icon-arrow" viewBox="0 0 10.7 9.4">
 <path fill="#D41443"  d="M0 3.7v2h7.6L5.3 8l1.4 1.4 4-4V4l-4-4-1.4 1.4 2.3 2.3"></path>
 </symbol>
-
+</defs>
 </svg>

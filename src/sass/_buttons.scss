@@ -30,7 +30,7 @@
 
 // Кнопка со стрелочкой
 
-.button::after {
+.button--arrow::after {
   content: '>';
   color: currentColor;
   padding-left: 15px;
