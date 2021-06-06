@@ -2,10 +2,6 @@
   padding-top: 80px;
   padding-bottom: 43px;
 
-  & .swiper-button-next,
-  & .swiper-button-prev {
-    display: none;
-  }
   @media screen and (min-width: 768px) {
     padding-top: 121px;
     padding-bottom: 60px;
@@ -33,7 +29,7 @@
 .reviews__wrap {
   margin-bottom: 30px;
   padding: 43px 50px 20px 50px;
-  /*background-color:;*/
+  background-color: #fafafa;
   min-width: 280px;
   z-index: -1;
 
@@ -48,23 +44,24 @@
 
 .reviews__feedback {
   position: relative;
+  display: inline;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   letter-spacing: 0.04em;
   background-image: linear-gradient(
-    0deg,
-    #e1e1e1 1.61%,
-    transparent 1.61%,
-    transparent 50%,
-    #e1e1e1 50%,
-    #e1e1e1 51.61%,
-    transparent 51.61%,
-    transparent 100%
+    to right,
+    #e1e1e1 33%,
+    transparent 33%,
+    transparent 66%,
+    #e1e1e1 66%,
+    #e1e1e1
   );
+  background-position: 0 5px;
+  background-repeat: repeat-x;
+  background-size: 2px 6px;
 
-  background-size: 280px 308px;
   z-index: 1;
 
   @media screen and (min-width: 768px) {
@@ -81,8 +78,8 @@
     content: '';
     position: absolute;
     display: block;
-    top: -14px;
-    left: 10px;
+    top: -16px;
+    left: -10px;
     width: 54px;
     height: 40px;
     background-image: url('/images/customer-reviews/quotes.svg');
@@ -91,7 +88,7 @@
     z-index: -1;
 
     @media screen and (min-width: 480px) {
-      left: -20px;
+      left: -25px;
     }
   }
 }
