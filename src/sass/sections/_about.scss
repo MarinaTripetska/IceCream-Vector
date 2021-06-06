@@ -52,7 +52,7 @@
 .about__milk-img {
   position: absolute;
   left: 0;
-  bottom: 12%;
+  top: 740px;
   width: 100%;
 }
 .about__btn {
@@ -62,4 +62,20 @@
 .about__btn--svg {
   width: 7px;
   height: 8px;
+}
+.about__list {
+  width: 230px;
+}
+.about__number {
+  font-family: $logo-font;
+  font-size: 36px;
+  line-height: 1.14;
+  margin-top: 16px;
+  margin-bottom: 19px;
+  color: $text-cl-red;
+}
+.about__text {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 1.17;
 }
