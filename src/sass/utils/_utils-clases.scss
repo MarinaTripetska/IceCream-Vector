@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 1px solid tomato;
 }
 
 body {
@@ -49,16 +50,13 @@ address {
 }
 
 .container {
-  width: 100%;
   height: auto;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  
-  @media screen and (min-width: 480px) {
-max-width: 480px;
-}
+  max-width: 480px;
+ 
   @media screen and (min-width: 768px) {
     padding-left: 34px;
     padding-right: 34px;

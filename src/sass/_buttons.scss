@@ -1,0 +1,86 @@
+// Основные кнопки
+
+.button--arrow {
+  padding: 12px 48px;
+  background: $btn-white-bg;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  color: $text-cl-red;
+
+  &:hover,
+  &:focus {
+    background: $btn-white-bg--hover;
+  }
+
+  &--red {
+    background: $btn-red-bg;
+    color: $text-cl-white;
+
+    &:hover,
+    &:focus {
+      background: $btn-red-bg--hover;
+    }
+  }
+
+  &::after {
+    content: '>';
+    color: currentColor;
+    padding-left: 15px;
+  }
+}
+
+// Кнопка со стрелочкой
+
+.button--circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background: $btn-white-bg;
+
+  &:hover,
+  &:focus {
+    background: $btn-white-bg--hover;
+  }
+}
+
+// Кнопки в хедере
+
+.button__small {
+  padding: 9px 15px;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 20px;
+  border: 0;
+  background: $btn-white-bg;
+  color: $text-cl-red;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 21px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &:focus,
+  &:hover {
+    background: $btn-white-bg--hover;
+  }
+
+  &--red {
+    background-color: $btn-red-bg;
+    color: $text-cl-white;
+
+    &:hover,
+    &:focus {
+      background: $btn-red-bg--hover;
+    }
+  }
+}
