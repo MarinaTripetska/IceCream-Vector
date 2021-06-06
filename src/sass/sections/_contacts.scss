@@ -22,12 +22,18 @@
   border-radius: 24px;
 
   background-color: #fff;
-}
-.contacts__card:not(:last-child) {
+&:not(:last-child) {
   @media screen and(max-width: 767px) {
     margin-bottom: 30px;
   }
 }
+&:last-child{
+  @media screen and(max-width: 767px) {
+    margin-bottom: 54px;
+  } 
+}
+}
+
 .card__lable {
   display: flex;
   justify-content: center;
@@ -97,4 +103,14 @@ line-height: 1.86;
 
 .card__part-bottom{
     padding-top: 25px;
+}
+.contacts__btn-container{
+  width: 162px;
+  margin-left: auto;
+  margin-right: auto;
+&:not(:last-child){
+  @media screen and(max-width:767px){
+    margin-bottom: 10px;
+  }
+}
 }
