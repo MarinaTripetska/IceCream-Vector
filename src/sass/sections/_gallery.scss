@@ -5,7 +5,9 @@
   background-size: cover;
 }
 .gallery__wrap {
-  object-fit: contain;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery-image {
