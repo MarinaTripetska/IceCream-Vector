@@ -4,3 +4,10 @@
   background-position: center;
   background-size: cover;
 }
+.gallery__wrap {
+  object-fit: contain;
+}
+
+.gallery-image {
+  width: 100%;
+}

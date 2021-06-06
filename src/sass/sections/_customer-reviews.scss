@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
+  color: $text-cl-black;
 }
 
 .reviews__image {
@@ -98,21 +98,22 @@
   text-align: center;
   margin-bottom: 30px;
 
-  &::before {
-    content: '';
+  .reviews__dots {
     display: block;
     margin: 0 auto;
     margin-bottom: 18px;
     text-align: center;
     width: 32px;
     height: 4px;
-    background-image: url('/images/customer-reviews/red-dots.svg');
+    background-image: url('/images/customer-reviews/first.svg'),
+      url('/images/customer-reviews/second.svg'), url('/images/customer-reviews/third.svg');
+    background-size: 32px cover;
+    background-position: left 0, center, right 0;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
   }
-
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 35px;
@@ -122,7 +123,33 @@
     font-size: 20px;
   }
 }
-.reviews__dots {
+
+.pagination-imitation__first {
+  background-image: url('/images/customer-reviews/home.svg'),
+    url('/images/customer-reviews/pagination-dot.svg'),
+    url('/images/customer-reviews/pagination-dot.svg');
+  background-repeat: no-repeat;
+  background-position: left 0, center, right 0;
+  background-size: cover;
+}
+
+.pagination-imitation__second {
+  background-image: url('/images/customer-reviews/pagination-dot.svg'),
+    url('/images/customer-reviews/home.svg'), url('/images/customer-reviews/pagination-dot.svg');
+  background-repeat: no-repeat;
+  background-position: left 0, center, right 0;
+  background-size: cover;
+}
+
+.pagination-imitation__third {
+  background-image: url('/images/customer-reviews/pagination-dot.svg'),
+    url('/images/customer-reviews/pagination-dot.svg'), url('/images/customer-reviews/home.svg');
+  background-repeat: no-repeat;
+  background-position: left 0, center, right 0;
+  background-size: cover;
+}
+
+/*.reviews__pagination {
   display: inline-block;
   margin: 0 6px;
   border-radius: 50%;
@@ -130,7 +157,7 @@
   height: 12px;
   background-color: #d9d9d9;
 }
-/*.reviews__dots--active {
+.reviews__pagination--active {
   background-image: url('/images/customer-reviews/home.svg');
   background-repeat: no-repeat;
   background-size: contain;
