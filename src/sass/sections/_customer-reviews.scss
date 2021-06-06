@@ -44,25 +44,24 @@
 
 .reviews__feedback {
   position: relative;
-  display: inline;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   letter-spacing: 0.04em;
   background-image: linear-gradient(
-    to right,
-    #e1e1e1 33%,
-    transparent 33%,
-    transparent 66%,
-    #e1e1e1 66%,
-    #e1e1e1
+    0deg,
+    #e1e1e1 1%,
+    transparent 1%,
+    transparent 50%,
+    #e1e1e1 50%,
+    #e1e1e1 52%,
+    transparent 52%,
+    transparent 100%
   );
-  background-position: 0 5px;
-  background-repeat: repeat-x;
-  background-size: 2px 6px;
+  background-size: 60px 60px;
 
-  z-index: 1;
+  z-index: 5;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -85,7 +84,7 @@
     background-image: url('/images/customer-reviews/quotes.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
+    z-index: -5;
 
     @media screen and (min-width: 480px) {
       left: -25px;
@@ -99,7 +98,7 @@
   text-align: center;
   margin-bottom: 30px;
 
-  /*&::before {
+  &::before {
     content: '';
     display: block;
     margin: 0 auto;
@@ -107,12 +106,12 @@
     text-align: center;
     width: 32px;
     height: 4px;
-    background-image: url('/images/customer-reviews/dot.svg');
+    background-image: url('/images/customer-reviews/red-dots.svg');
 
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
     }
-  }*/
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -139,9 +138,4 @@
   background-color: transparent;
   width: 13px;
   height: 13px;
-}
-.customer-reviews .customer-reviews__paginationbullets {
-  bottom: 0px;
-  left: 0;
-  width: 100%;
 }*/
