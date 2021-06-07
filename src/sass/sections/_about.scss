@@ -1,0 +1,92 @@
+.about {
+  position: relative;
+  padding: 121px 20px 50px 20px;
+  max-width: 480px;
+  background-color: #fff5f6;
+}
+.about__label {
+  font-family: $logo-font;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #ffa5ba;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.about__title {
+  font-family: $logo-font;
+  color: #d41443;
+  font-size: 34px;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.about--cow {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 46px;
+}
+.about__text {
+  max-width: 220px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 47px;
+}
+
+.about__second-text {
+  margin-bottom: 47px;
+  max-width: 220px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-left: auto;
+  margin-right: auto;
+  color: #907e82;
+}
+.about__milk-img {
+  position: absolute;
+  left: 0;
+  top: 735px;
+  width: 100%;
+}
+.about__btn {
+  display: flex;
+  justify-content: center;
+}
+.about__btn--svg {
+  width: 7px;
+  height: 8px;
+}
+.about__list {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__item {
+  margin-bottom: 38px;
+}
+.about__item:last-child {
+  margin-bottom: 0px;
+}
+.about__number {
+  font-family: $logo-font;
+  font-size: 36px;
+  line-height: 1.14;
+  margin-top: 16px;
+  margin-bottom: 19px;
+  color: $text-cl-red;
+}
+.about__item--text {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: left;
+  margin: 0;
+}
