@@ -6,17 +6,17 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 1px solid tomato;
+  //  outline: 1px solid tomato;
 }
 
 body {
   font-family: $main-font;
   font-size: 12px;
-  // line-height: 2.58;
-
   color: $text-cl-black;
 }
-
+body.menu-open {
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
