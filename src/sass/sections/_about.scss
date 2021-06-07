@@ -1,8 +1,19 @@
+* {
+  outline: 1px solid red;
+}
+.about__section {
+  background-color: #fff5f6;
+}
 .about {
   position: relative;
-  padding: 121px 20px 50px 20px;
-  max-width: 480px;
-  background-color: #fff5f6;
+
+  @media screen and (max-width: 767px) {
+    padding: 121px 20px 50px 20px;
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+  }
 }
 .about__label {
   font-family: $logo-font;
@@ -12,6 +23,13 @@
   color: #ffa5ba;
   text-transform: uppercase;
   margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 .about__title {
   font-family: $logo-font;
@@ -21,14 +39,49 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+.about__content {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .about--cow {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 46px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    width: 340px;
+    margin: 0 17px 0 0;
+  }
 }
 .about__text {
-  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+}
+.about__text--modifier {
   font-family: $main-font;
   font-weight: 500;
   font-size: 12px;
@@ -36,12 +89,23 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 47px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 220px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 0 0 50px 0;
+    max-width: 340px;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .about__second-text {
   margin-bottom: 47px;
-  max-width: 220px;
-
   font-family: $main-font;
   font-weight: 500;
   font-size: 12px;
@@ -49,16 +113,46 @@
   margin-left: auto;
   margin-right: auto;
   color: #907e82;
+
+  @media screen and (max-width: 767px) {
+    max-width: 220px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 0;
+    max-width: 340px;
+    font-size: 14px;
+  }
 }
 .about__milk-img {
   position: absolute;
   left: 0;
   top: 735px;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.about__btn--modifier {
+  font-size: 14px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    height: 44px;
+    width: 176px;
+  }
 }
 .about__btn {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 27%;
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
 }
 .about__btn--svg {
   width: 7px;
@@ -66,27 +160,7 @@
 }
 .about__list {
   max-width: 280px;
+  padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
-}
-.about__item {
-  margin-bottom: 38px;
-}
-.about__item:last-child {
-  margin-bottom: 0px;
-}
-.about__number {
-  font-family: $logo-font;
-  font-size: 36px;
-  line-height: 1.14;
-  margin-top: 16px;
-  margin-bottom: 19px;
-  color: $text-cl-red;
-}
-.about__item--text {
-  font-family: $main-font;
-  font-size: 12px;
-  line-height: 1.17;
-  text-align: left;
-  margin: 0;
 }
