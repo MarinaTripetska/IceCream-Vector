@@ -10,7 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-      </head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
   <body>
     <include src="./partials/hero-header.html"></include>
     <include src="./partials/products.html"></include>
@@ -24,5 +30,14 @@
     <!-- Кнопки пример -->
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script>
+      $(function () {
+        $('.slider').slick({
+          infinite: true,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
   </body>
 </html>
