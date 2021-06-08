@@ -1,8 +1,19 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="burger" viewBox="0 0 46 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+
+</symbol>
 <symbol id="icon-arrow" viewBox="0 0 10.7 9.4">
 <path fill="#D41443"  d="M0 3.7v2h7.6L5.3 8l1.4 1.4 4-4V4l-4-4-1.4 1.4 2.3 2.3"></path>
 </symbol>
+
 <symbol id="icon-telegram" viewBox="0 0 40 32">
 <path d="M16.205 20.751l-0.635 8.339c0.909 0 1.302-0.364 1.774-0.802l4.261-3.801 8.829 6.035c1.619 0.842 2.76 0.399 3.197-1.39l5.797-25.346c0.514-2.234-0.866-3.108-2.443-2.56l-34.065 12.172c-2.325 0.842-2.29 2.052-0.395 2.6l8.709 2.528 20.229-11.814c0.952-0.588 1.818-0.263 1.106 0.326l-16.364 13.713z"></path>
 </symbol>
@@ -10,7 +21,9 @@
 <path d="M14.266 15.97h-4.176v15.39h-6.327v-15.39h-3.009v-5.409h3.009v-3.5c0-2.503 1.182-6.422 6.384-6.422l4.687 0.020v5.25h-3.401c-0.558 0-1.342 0.28-1.342 1.474v3.183h4.729l-0.553 5.403z"></path>
 </symbol>
 <symbol id="icon-git" viewBox="0 0 32 32">
+
 <path d="M16 .94A15.12 15.12 0 00.94 16c0 7.06 4.95 13.47 11.53 15.06v-4.98c-.65.14-1.25.14-1.91-.05a3.7 3.7 0 01-2.15-1.76c-.35-.58-.95-1.2-1.59-1.16l-.15-1.76c1.37-.11 2.55.84 3.25 2.02.32.52.67.83 1.14.97.44.13.92.06 1.48-.13.14-1.12.65-1.54 1.03-2.13-3.92-.58-5.48-2.66-6.1-4.3a6.91 6.91 0 011.07-6.63c.03-.04.08-.12.06-.18-.67-2.02.15-3.68.18-3.86.77.23.9-.23 3.34 1.26l.42.25c.18.1.12.05.3.03 1.02-.27 2.1-.43 3.16-.44 1.07.01 2.14.17 3.2.45l.14.02.12-.06c3.06-1.85 2.95-1.25 3.77-1.51.03.17.83 1.87.17 3.86-.09.27 2.65 2.78 1.13 6.8-.62 1.65-2.18 3.73-6.1 4.31.5.77 1.1 1.18 1.1 2.76v6.22c6.58-1.59 11.53-8 11.53-15.06C31.06 7.73 24.27.94 16 .94z"/>
+
 </symbol>
 </defs>
 </svg>

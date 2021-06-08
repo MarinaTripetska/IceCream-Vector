@@ -1,0 +1,15 @@
+.gallery {
+  background-image: linear-gradient($pink-bg 40%, $text-cl-white 40%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery__wrap {
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-image {
+  width: 100%;
+}

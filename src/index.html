@@ -10,39 +10,40 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    /> -->
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
     <include src="./partials/hero-header.html"></include>
+    <main>
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/advantages.html"></include>
     <include src="./partials/gallery.html"></include>
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
+  </main>
     <include src="./partials/footer.html"></include>
 
-    <!-- Кнопки пример -->
-
-    <!-- <button class="button--arrow" type="button">badhbfbx</button>
-
-    <button class="button--arrow button--arrow--red " type="button">badhbfbx</button>
-
-    <button class="button--circle" type="button">
-      <svg width="10.7px" height="9.4px">
-        <use href="./images/sprite.svg#icon-arrow"></use>
-      </svg>
-    </button>
-
-    <button class="button__small" type="button">How it’s made?</button>
-    <button class="button__small button__small--red" type="button">Products</button> -->
-
+   
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+
+    <script>
+      $(function () {
+        $('.slider').slick({
+          infinite: true,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
+
+    <script src="./menu.js"></script>
+
   </body>
 </html>
