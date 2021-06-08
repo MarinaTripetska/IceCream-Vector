@@ -1,41 +1,64 @@
 <footer class="footer">
   <div class="contacts__container">
-    <div class="footer__text">
-      <p class="footer__text_decoration">
-        homemade ice cream <span class="footer__text_carryover">made</span>
-      </p>
-      <p class="footer__text_dec">with <span class="footer__text_carryover">passion</span></p>
+    <div class="footer__wrapper">
+      <div class="footer__text">
+        <h3 class="footer__text_decoration">
+          homemade ice cream <span class="footer__text_carryover">made</span>
+        </h3>
+        <h2 class="footer__text_dec">with <span class="footer__text_carryover">passion</span></h2>
+      </div>
+      <div class="footer_nav">
+        <ul class="footer_nav__list">
+          <li>
+            <a
+              class="footer_nav__link"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer_nav__link_icon" width="19px" height="19px">
+                <use href="./images/sprite.svg#icon-git"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer_nav__link"
+              href="https://telegram.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                class="footer_nav__link_icon footer_nav__link_icon--telegram"
+                width="19px"
+                height="15px"
+              >
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer_nav__link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="footer_nav__link_icon" width="9px" height="19px">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__text_tel"
+          >Feel free to contact
+          <a class="footer__text_tel footer__text_tel--red" href="tel:+610383766284"
+            >+61 (0) 383 766 284</a
+          >
+        </span>
+      </div>
     </div>
-    <div class="footer_nav">
-      <ul class="footer_nav__list">
-        <li>
-          <a class="footer_nav__link" href="#" target="_blank">
-            <svg class="footer_nav__link_icon" width="19px" height="19px">
-              <use href="./images/sprite.svg#icon-git"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="footer_nav__link" href="#" target="_blank">
-            <svg class="footer_nav__link_icon" width="19px" height="15px">
-              <use href="./images/sprite.svg#icon-telegram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="footer_nav__link" href="#" target="_blank">
-            <svg class="footer_nav__link_icon" width="9px" height="19px">
-              <use href="./images/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <span class="footer__text_tel"
-        >Feel free to contact
-        <a class="footer__text_tel footer__text_tel--red" href="+61(0)383766284">+61(0)383766284</a>
-      </span>
-    </div>
-    <div class="footer__copyright">
+    <div id="copyright" class="footer__copyright">
       © 2019 - IceCream. <span class="footer__text_carryover">All Rights Reserved.</span>
     </div>
   </div>

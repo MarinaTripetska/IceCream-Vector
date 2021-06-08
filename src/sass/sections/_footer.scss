@@ -1,5 +1,32 @@
 .footer {
+  padding-top: 113px;
   background-color: $pink-bg;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 158px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 165px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $ft-line;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 89px;
+
+    @media screen and (min-width: 768px) {
+      bottom: 73px;
+    }
+    @media screen and (min-width: 1200px) {
+      bottom: 45px;
+    }
+  }
 
   &_nav {
     display: flex;
@@ -15,6 +42,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: $animation;
+
+      @media screen and (min-width: 768px) {
+        height: 34px;
+        width: 34px;
+      }
 
       &:hover,
       &:focus {
@@ -23,6 +56,11 @@
 
       &_icon {
         fill: $white-bg;
+
+        &--telegram {
+          position: relative;
+          left: -1px;
+        }
       }
     }
     &__list {
@@ -31,6 +69,25 @@
       gap: 28px;
       margin-bottom: 46px;
       margin-top: 43px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 91px;
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 97px;
     }
   }
 
@@ -83,8 +140,9 @@
   &__text_carryover {
     display: block;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       display: initial;
+      margin-bottom: 91px;
     }
   }
 
@@ -111,11 +169,17 @@
       text-align: right;
       color: $text-cl-red;
       text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $icon-bg--hover;
+        transition: $animation;
+        text-shadow: -1px -1px 1px $icon-bg, 2px 2px 1px $icon-bg;
+      }
     }
   }
 
   &__copyright {
-    position: relative;
     padding-top: 22px;
     padding-bottom: 25px;
     font-family: $main-font;
@@ -126,15 +190,14 @@
     text-align: center;
     color: $text-cl-grey;
 
-    &::before {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 100vw;
-      border-bottom: 1px solid $ft-line;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
+    @media screen and (min-width: 768px) {
+      padding-top: 29px;
+      padding-bottom: 18px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 9px;
+      padding-bottom: 10px;
     }
   }
 }
