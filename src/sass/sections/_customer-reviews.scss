@@ -31,7 +31,7 @@
   padding: 43px 50px 20px 50px;
   background-color: #fafafa;
   min-width: 240px;
-  z-index: -1;
+  z-index: -5;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 25px;
@@ -42,26 +42,26 @@
   }
 }
 
-.reviews__feedback {
+.reviews__text {
   position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   letter-spacing: 0.04em;
+  z-index: 5;
   background-image: linear-gradient(
     0deg,
     #e1e1e1 1%,
     transparent 1%,
     transparent 50%,
-    #e1e1e1 50%,
     #e1e1e1 52%,
-    transparent 52%,
+    #e1e1e1 52%,
+    transparent 50%,
     transparent 100%
   );
-  background-size: 60px 60px;
 
-  z-index: 5;
+  background-size: 60px 60px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -71,6 +71,18 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.86;
+    background-image: linear-gradient(
+      0deg,
+      #e1e1e1 1%,
+      transparent 1%,
+      transparent 50%,
+      #e1e1e1 53%,
+      #e1e1e1 53%,
+      transparent 50%,
+      transparent 100%
+    );
+
+    background-size: 100%;
   }
 
   &::before {
@@ -121,25 +133,52 @@
   }
 }
 
-.pagination-imitation {
+/*.pagination-imitation {
   margin-left: auto;
   margin-right: auto;
+}*/
+
+.slider .slick-dots {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
-/*.reviews__pagination {
+.slick-dots button {
   display: inline-block;
-  margin: 0 6px;
+  margin: 0px 5px 0px 5px;
+  border: none;
   border-radius: 50%;
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
+  outline: none;
+  font-size: 0;
 }
-.reviews__pagination--active {
+
+.slick-dots li[class='slick-active'] button {
   background-image: url('/images/customer-reviews/home.svg');
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 0;
   background-color: transparent;
   width: 13px;
+  height: 12px;
+}
+
+/*.slider .slick-dots button {
+  font-size: 0;
   height: 13px;
+  width: 13px;
+  border-radius: 50%;
+
+  border: transparent;
+}
+.slider .slick-dots li {
+  list-style: none;
+  width: 13px;
+  height: 13px;
+  margin: 0px 10px;
 }*/
