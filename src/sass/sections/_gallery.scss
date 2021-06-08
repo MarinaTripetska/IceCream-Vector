@@ -5,11 +5,15 @@
   background-size: cover;
 }
 .gallery__wrap {
-  object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.gallery-image {
-  width: 100%;
+.gallery-image img {
+  margin-left: auto;
+  margin-right: auto;
 }
