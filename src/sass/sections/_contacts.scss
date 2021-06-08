@@ -39,7 +39,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-basis: calc((100% - 2 * 30px) / 3);
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 
   &:not(:last-child) {
