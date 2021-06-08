@@ -14,8 +14,10 @@
   }
 }
 .about__label {
-  font-family: $logo-font;
+  display: block;
   text-align: center;
+  font-family: $logo-font;
+
   font-size: 18px;
   line-height: 1.17;
   color: #ffa5ba;
@@ -50,9 +52,11 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 .about--cow {
@@ -72,12 +76,12 @@
   }
 }
 .about__text {
+  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
     padding-top: 50px;
-    margin-left: 17px;
     margin-right: 0;
   }
 }
