@@ -1,6 +1,6 @@
-// * {
-//   outline: 1px solid red;
-// }
+* {
+  outline: 1px solid red;
+}
 .about__section {
   background-color: #fff5f6;
 }
@@ -55,6 +55,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -78,6 +79,7 @@
   }
 }
 .about__text {
+  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
 
