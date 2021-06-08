@@ -194,6 +194,18 @@
     width: 159px;
   }
 }
+.menu-btn.is-open .btn-header__container--display {
+  display: none;
+}
+.btn-header__container--display {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  @media screen and(min-width:1200px) {
+    display: none;
+  }
+}
+
 .header__bg {
   position: relative;
   z-index: 3;
