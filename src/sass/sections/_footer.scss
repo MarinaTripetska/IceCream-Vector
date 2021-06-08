@@ -1,6 +1,14 @@
 .footer {
+  padding-top: 113px;
   background-color: $pink-bg;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 158px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 165px;
+  }
 
   &::before {
     position: absolute;
