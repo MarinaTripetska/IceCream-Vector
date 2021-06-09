@@ -104,24 +104,30 @@
   }
 }
 
-.reviews__dots {
-  margin: 0 auto;
-  margin-bottom: 18px;
-  text-align: center;
-  width: 32px;
-  height: 4px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 15px;
-  }
-}
-
 .reviews__location {
   font-weight: 500;
   font-size: 14px;
   line-height: 186%;
   text-align: center;
   margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    text-align: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+
+    background-image: url('/images/customer-reviews/red-dots.png');
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
