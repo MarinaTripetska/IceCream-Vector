@@ -9,6 +9,7 @@
 .header__container {
   @extend %container;
   overflow: hidden;
+  position: relative;
 }
 .logo {
   max-width: 199px;
@@ -26,9 +27,6 @@
   @include flex-container;
   justify-content: space-between;
 }
-// .header__wraper--margin-b{
-//     margin-bottom: 137px;
-// }
 
 .menu-btn {
   display: inline-flex;
@@ -41,6 +39,9 @@
   border: none;
 
   background-color: transparent;
+  @media screen and(min-width: 768px) {
+    right: 190px;
+  }
   @media screen and(min-width: 1200px) {
     display: none;
   }
@@ -79,7 +80,7 @@
     left: 0;
     top: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     overflow-y: scroll;
@@ -180,16 +181,20 @@
   color: $text-cl-red;
 }
 .btn-header__container {
+  width: 100%;
+  max-width: 209px;
+  @media screen and(min-width:768px) {
+    max-width: 186px;
+  }
   @media screen and(max-width:1199px) {
     display: block;
-    width: 100%;
-    max-width: 209px;
 
     position: absolute;
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
   }
+
   @media screen and(min-width:1200px) {
     width: 159px;
   }
@@ -198,6 +203,12 @@
   display: none;
 }
 .btn-header__container--display {
+  position: absolute;
+  top: 0;
+  right: 34px;
+  // transform: translateX(-50%);
+  width: 100%;
+  max-width: 160px;
   @media screen and(max-width:767px) {
     display: none;
   }
@@ -233,6 +244,14 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/hero-header/hero-header-icecream-mobile@2x.png');
     }
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 78px;
+    padding-bottom: 56px;
   }
 }
 .circle {
@@ -282,10 +301,14 @@
     transform: scale(0.9);
   }
 }
-.position {
+.banner__position {
   position: relative;
   z-index: 30;
+  @include flex-container;
+  justify-content: space-between;
+  align-items: start;
 }
+
 .main-title {
   font-family: Titan One;
 
@@ -296,6 +319,14 @@
   text-transform: uppercase;
 
   color: $text-cl-white;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.16;
+  }
 }
 .main-title__span {
   font-size: 2em;
@@ -303,6 +334,9 @@
 }
 .main-title--margin-b {
   margin-bottom: 19px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 25px;
+  }
 }
 
 .button__smal--container {
@@ -310,4 +344,67 @@
 }
 .button__small--margin {
   margin-right: 9px;
+  @media screen and(min-width:1200px) {
+    margin-right: 15px;
+  }
+}
+.achievement__list {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  @extend %list;
+}
+.achievement__item {
+  position: relative;
+  z-index: 10;
+  @include flex-container;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $text-cl-white;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.achievement__item--margin-b {
+  margin-bottom: 14px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 18px;
+  }
+}
+.achievement__number {
+  font-family: Titan One;
+  // font-style: normal;
+  // font-weight: normal;
+  font-size: 28px;
+  line-height: 1.14;
+
+  letter-spacing: 0.04em;
+
+  color: $text-cl-red;
+  @media screen and(min-width:1200px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 35px;
+    background-color: #fff;
+    @media screen and(min-width:1200px) {
+      width: 30px;
+      height: 30px;
+      top: -3px;
+      left: 60px;
+    }
+  }
 }
