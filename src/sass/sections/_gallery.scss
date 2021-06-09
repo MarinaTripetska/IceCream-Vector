@@ -14,6 +14,15 @@
 }
 
 .gallery-image img {
+  width: 110vw;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 105vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100vw;
+  }
 }
