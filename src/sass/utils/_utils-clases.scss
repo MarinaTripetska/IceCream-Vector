@@ -15,7 +15,9 @@ body {
   color: $text-cl-black;
 }
 body.menu-open {
-  overflow: hidden;
+  @media screen and(max-width:767px) {
+    overflow: hidden;
+  }
 }
 h1,
 h2,
