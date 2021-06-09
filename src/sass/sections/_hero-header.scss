@@ -32,7 +32,7 @@
   display: inline-flex;
 
   position: relative;
-  z-index: 6;
+  z-index: 36;
 
   margin: 0;
   padding: 0;
@@ -76,23 +76,23 @@
   @media screen and(max-width: 1199px) {
     display: none;
 
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 100vw;
-    height: 100vh;
-
-    overflow-y: scroll;
-
-    padding: 23px 20px;
-
-    background-color: $header-menu-bg;
-    z-index: 5;
     &.is-open {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      overflow-y: scroll;
+
+      padding: 23px 20px;
+
+      background-color: $header-menu-bg;
+      z-index: 35;
     }
   }
   @media screen and(min-width: 1200px) {
@@ -102,24 +102,29 @@
   }
 }
 .menu-wraper {
-  @include flex-container;
-  justify-content: space-between;
-  @media screen and(max-width:1199px) {
-    position: relative;
-    width: 100%;
-    max-width: 250px;
-    margin-right: auto;
-    margin-left: auto;
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and(min-width:450px) {
   }
+  @media screen and(min-width:1200px) {
+    @include flex-container;
+    justify-content: space-between;
+  }
+  //
 }
-.header__navigation {
-  @media screen and(max-width:767.98px) {
-    padding-top: 100px;
+.navigation {
+  padding-top: 100px;
+  @media screen and(min-width:768px) {
+    padding-top: 123px;
   }
   @media screen and(min-width: 1200px) {
     @include flex-container;
     justify-content: space-between;
-    // flex-grow: 2;
+    padding-top: 0;
   }
 }
 .navigation__list {
@@ -131,18 +136,12 @@
     @include flex-container;
     display: inline-flex;
     justify-content: space-between;
-    // flex-grow: 1;
   }
 }
 .navigation__item {
   height: 41px;
   @media screen and(max-width:1199px) {
     border-bottom: 1px solid #e18298;
-  }
-  @media screen and(min-width:1200px) {
-    // display: inline-block;
-    // width: 100%;
-    // flex-grow: 1;
   }
   &:not(:last-child) {
     @media screen and(min-width:1200px) {
@@ -157,7 +156,6 @@
   }
 
   font-weight: 700;
-
   font-size: 14px;
   line-height: 1.29;
 
@@ -172,6 +170,7 @@
 
   @media screen and(min-width:1200px) {
     display: inline-block;
+
     font-size: 16px;
     line-height: 1.31;
     padding: 10px 0;
@@ -181,22 +180,21 @@
   color: $text-cl-red;
 }
 .btn-header__container {
+  display: block;
   width: 100%;
   max-width: 209px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
   @media screen and(min-width:768px) {
     max-width: 186px;
   }
-  @media screen and(max-width:1199px) {
-    display: block;
-
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
   @media screen and(min-width:1200px) {
-    width: 159px;
+    max-width: 159px;
   }
 }
 .menu-btn.is-open .btn-header__container--display {
@@ -219,40 +217,18 @@
 
 .header__bg {
   position: relative;
-  z-index: 10;
+
   padding-top: 137px;
   min-height: 446px;
-
   @media screen and(min-width:768px) {
     padding-top: 15px;
     min-height: 317px;
-    background-image: url('../images/hero-header/hero-header-girl-leptop.png');
-    background-repeat: no-repeat;
-
-    background-position: 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/hero-header/hero-header-girl-leptop@2x.png');
-    }
   }
 
   @media screen and(min-width:1200px) {
     padding-top: 84px;
     min-height: 583px;
     // padding-bottom: 30px;
-    background-image: url('../images/hero-header/hero-header-girl-desctop.png');
-
-    background-position: 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/hero-header/hero-header-girl-desctop@2x.png');
-    }
   }
 }
 
@@ -577,7 +553,43 @@
     }
   }
 }
+.banner__txt::after {
+  @media screen and(min-width:768px) {
+    content: '';
+    position: absolute;
+    left: 430px;
+    bottom: -45px;
 
+    width: 168px;
+    height: 133px;
+    background-image: url('../images/hero-header/hero-header-girl-leptop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-leptop@2x.png');
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    left: 550px;
+    bottom: -66px;
+
+    width: 293px;
+    height: 232px;
+    background-image: url('../images/hero-header/hero-header-girl-desctop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-desctop@2x.png');
+    }
+  }
+}
 .banner__txt-position {
   margin-left: 120px;
   @media screen and(min-width:1200px) {
