@@ -219,74 +219,178 @@
 
 .header__bg {
   position: relative;
-  z-index: 3;
+  z-index: 10;
   padding-top: 137px;
-  padding-bottom: 160px;
-  min-height: 406px;
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 171px;
-    height: 410px;
-    background-image: url('../images/hero-header/icecream-mobile@1x.png');
+  min-height: 446px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 15px;
+    min-height: 317px;
+    background-image: url('../images/hero-header/hero-header-girl-leptop.png');
     background-repeat: no-repeat;
-    background-size: 171px 410px;
-    background-position: 0 0;
+
+    background-position: 100% 100%;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/hero-header/hero-header-icecream-mobile@2x.png');
+      background-image: url('../images/hero-header/hero-header-girl-leptop@2x.png');
     }
   }
-  @media screen and(min-width:768px) {
-    padding-top: 15px;
-    padding-bottom: 34px;
-  }
+
   @media screen and(min-width:1200px) {
-    padding-top: 78px;
-    padding-bottom: 56px;
+    padding-top: 84px;
+    min-height: 583px;
+    // padding-bottom: 30px;
+    background-image: url('../images/hero-header/hero-header-girl-desctop.png');
+
+    background-position: 100% 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-desctop@2x.png');
+    }
   }
 }
+
+.header__bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 171px;
+  max-height: 410px;
+  background-image: url('../images/hero-header/icecream-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  // background-position: 0 0;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-header/hero-header-icecream-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    right: 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 213px;
+
+    max-width: 143px;
+    max-height: 336px;
+
+    background-image: url('../images/hero-header/hero-header-icecream-leptop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-icecream-leptop@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 335px;
+
+    max-width: 236px;
+    max-height: 557px;
+
+    background-image: url('../images/hero-header/hero-header-icecream-desctop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-icecream-desctop@2x.png');
+    }
+  }
+}
+
 .circle {
-  @media screen and(max-width:480px) {
-    position: absolute;
+  position: absolute;
 
-    right: -35px;
-    top: 27px;
-    width: 100%;
-    height: 100%;
-    max-width: 284px;
-    max-height: 345px;
+  right: -35px;
+  top: 27px;
 
-    &:after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
+  width: 284px;
+  height: 345px;
 
-      background-image: url(../images/hero-header/ellipse@1x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      // background-size: 284px 344px;
-      background-position: right -20pxpx bottom 0px;
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero-header/ellipse@2x.png');
-      }
+  @media screen and (min-width: 480px) {
+    right: 0;
+    top: 35px;
 
-      animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 93px;
+    top: -40px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 538px;
+    height: 538px;
+
+    right: 120px;
+    top: -10px;
+  }
+}
+
+.circle:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+
+  background-image: url('../images/hero-header/ellipse@1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: right -20pxpx bottom 0px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-header/ellipse@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 324px;
+    height: 322px;
+    background-image: url('../images/hero-header/ellipse-tablet@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/ellipse-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 538px;
+    height: 538px;
+    background-image: url('../images/hero-header/elipse-desktop@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/elipse-desktop@2x.png');
     }
   }
 }
@@ -307,6 +411,12 @@
   @include flex-container;
   justify-content: space-between;
   align-items: start;
+  @media screen and(min-width:768px) {
+    margin-bottom: 66px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 112px;
+  }
 }
 
 .main-title {
@@ -349,10 +459,10 @@
   }
 }
 .achievement__list {
+  @extend %list;
   @media screen and(max-width:767px) {
     display: none;
   }
-  @extend %list;
 }
 .achievement__item {
   position: relative;
@@ -406,5 +516,71 @@
       top: -3px;
       left: 60px;
     }
+  }
+}
+
+.banner__txt {
+  position: relative;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: block;
+    width: 114px;
+
+    font-size: 8px;
+    line-height: 1.5;
+
+    color: $text-cl-white;
+
+    @media screen and(min-width:1200px) {
+      width: 200px;
+
+      font-size: 14px;
+      line-height: 1.43;
+    }
+  }
+}
+.banner__txt::before {
+  content: '';
+  position: absolute;
+
+  left: -120px;
+  top: -50px;
+
+  width: 124px;
+  height: 126px;
+
+  background-image: url(../images/hero-header/hero-header-milk-leptop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero-header/hero-header-milk-leptop@2x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: -230px;
+    top: -80px;
+
+    width: 188px;
+    height: 191px;
+
+    background-image: url(../images/hero-header/hero-header-milk-desctop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-header/hero-header-milk-desctop@2x.png);
+    }
+  }
+}
+
+.banner__txt-position {
+  margin-left: 120px;
+  @media screen and(min-width:1200px) {
+    margin-left: 220px;
   }
 }
