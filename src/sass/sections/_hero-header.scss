@@ -219,40 +219,18 @@
 
 .header__bg {
   position: relative;
-  z-index: 10;
+
   padding-top: 137px;
   min-height: 446px;
-
   @media screen and(min-width:768px) {
     padding-top: 15px;
     min-height: 317px;
-    background-image: url('../images/hero-header/hero-header-girl-leptop.png');
-    background-repeat: no-repeat;
-
-    background-position: 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/hero-header/hero-header-girl-leptop@2x.png');
-    }
   }
 
   @media screen and(min-width:1200px) {
     padding-top: 84px;
     min-height: 583px;
     // padding-bottom: 30px;
-    background-image: url('../images/hero-header/hero-header-girl-desctop.png');
-
-    background-position: 100% 100%;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/hero-header/hero-header-girl-desctop@2x.png');
-    }
   }
 }
 
@@ -577,7 +555,43 @@
     }
   }
 }
+.banner__txt::after {
+  @media screen and(min-width:768px) {
+    content: '';
+    position: absolute;
+    left: 430px;
+    bottom: -45px;
 
+    width: 168px;
+    height: 133px;
+    background-image: url('../images/hero-header/hero-header-girl-leptop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-leptop@2x.png');
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    left: 550px;
+    bottom: -66px;
+
+    width: 293px;
+    height: 232px;
+    background-image: url('../images/hero-header/hero-header-girl-desctop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-desctop@2x.png');
+    }
+  }
+}
 .banner__txt-position {
   margin-left: 120px;
   @media screen and(min-width:1200px) {
