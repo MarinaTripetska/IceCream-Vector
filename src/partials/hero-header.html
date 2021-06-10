@@ -1,7 +1,7 @@
 <header class="header__section">
   <div class="header__container">
-    <div class="header__wraper header__wraper--margin-b">
-      <a class="logo header__logo" href="./index.html">
+    <div class="header__wraper">
+      <a class="logo" href="./index.html">
         <picture>
           <source
             srcset="
@@ -20,22 +20,21 @@
           <img src="./images/hero-header/hero-header-logo.png" alt="logo" />
         </picture>
       </a>
+      <div class="header__wraper--item">
+        <button
+          class="menu-btn menu-btn--margin"
+          type="button"
+          aria-controls="menu-container"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" aria-label="переключатель мобильного меню">
+            <use class="menu-btn__icon--menu" href="./images/sprite.svg#burger"></use>
+            <use class="menu-btn__icon--close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
 
-      <button
-        class="menu-btn"
-        type="button"
-        aria-controls="menu-container"
-        aria-expanded="false"
-        data-menu-button
-      >
-        <svg class="menu-btn__icon" aria-label="переключатель мобильного меню">
-          <use class="menu-btn__icon--menu" href="./images/sprite.svg#burger"></use>
-          <use class="menu-btn__icon--close" href="./images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-
-      <div class="menu__container" id="menu-container" data-menu>
-        <div class="menu-wraper">
+        <div class="menu__container" id="menu-container" data-menu>
           <nav class="navigation">
             <ul class="navigation__list navigation__list--margin-b">
               <li class="navigation__item">
@@ -59,9 +58,9 @@
             <button class="button-arrow--white" type="button">Buy now</button>
           </div>
         </div>
-      </div>
-      <div class="btn-header__container--display">
-        <button class="button-arrow--white" type="button">Buy now</button>
+        <div class="btn-header__container--display">
+          <button class="button-arrow--white" type="button">Buy now</button>
+        </div>
       </div>
     </div>
     <!-- Banner -->
