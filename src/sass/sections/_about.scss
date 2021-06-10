@@ -93,7 +93,7 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    padding-top: 50px;
+    margin-top: 50px;
     margin-right: 0;
     margin-top: 0;
   }
@@ -270,5 +270,3 @@
 .backdrop-about.is-hidden-about .modal-about {
   transform: translate(-50%, -50%) scale(0.5);
 }
-
-
