@@ -28,7 +28,7 @@
           aria-expanded="false"
           data-menu-button
         >
-          <svg class="menu-btn__icon" aria-label="переключатель мобильного меню">
+          <svg class="menu-btn__icon" aria-label="mobile menu switch">
             <use class="menu-btn__icon--menu" href="images/sprite.svg#burger"></use>
             <use class="menu-btn__icon--close" href="images/sprite.svg#icon-close"></use>
           </svg>
@@ -38,19 +38,19 @@
           <nav class="navigation">
             <ul class="navigation__list navigation__list--margin-b">
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--current" href="#hero-header">Home</a>
+                <a class="navigation__link scrollto" href="#hero-header">Home</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#products">About us</a>
+                <a class="navigation__link scrollto" href="#products">About us</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#about">How it’s made?</a>
+                <a class="navigation__link scrollto" href="#about">How it’s made?</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#advantages">Our products</a>
+                <a class="navigation__link scrollto" href="#advantages">Our products</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#contacts">Contact</a>
+                <a class="navigation__link scrollto" href="#contacts">Contact</a>
               </li>
             </ul>
           </nav>
@@ -60,6 +60,12 @@
         </div>
         <div class="btn-header__container--display">
           <button class="button-arrow--white" type="button">Buy now</button>
+        </div>
+        <div class="navigation__item--btn">
+          <a class="navigation__link--btn scrollto" href="#hero-header"
+            ><svg class="navigation__icon--btn" width="35px">
+              <use href="images/sprite.svg#icon-arrow"></use></svg
+          ></a>
         </div>
       </div>
     </div>
