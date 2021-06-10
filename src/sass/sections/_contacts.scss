@@ -136,6 +136,16 @@
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
     background-color: $pink-bg;
+
+    &-two {
+      position: relative;
+      padding: 10px;
+      z-index: 2;
+      width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+      background-color: $pink-bg;
+    }
   }
 }
 
@@ -143,7 +153,6 @@
   position: absolute;
   margin: 10px;
   right: 10px;
-  border: 10px;
   background: none;
   opacity: 0.7;
   color: $btn-white-bg;
@@ -159,6 +168,7 @@
 }
 
 .map {
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -168,16 +178,10 @@
   justify-content: center;
 
   &-title {
-    margin-bottom: 35px;
-    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
     text-align: center;
     font-size: 15px;
-  }
-  &-text {
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 21px;
 
     @media screen and(min-width: 767px) {
       font-size: 20px;
@@ -187,6 +191,23 @@
     @media screen and(min-width: 1200px) {
       font-size: 22px;
       line-height: 190%;
+      letter-spacing: 0.04em;
+    }
+  }
+  &-text {
+    text-align: left;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 21px;
+
+    @media screen and(min-width: 767px) {
+      font-size: 20px;
+      line-height: 155%;
+    }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 22px;
+      line-height: 170%;
       letter-spacing: 0.04em;
     }
   }
@@ -213,4 +234,29 @@
     margin-top: 0;
     margin-left: 15px;
   }
+}
+
+.modal__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #e17992;
+  cursor: pointer;
+}
+.modal__close:hover .modal__icon,
+.modal__close:focus .modal__icon {
+  fill: crimson;
+}
+.modal__icon {
+  width: 18px;
+  height: 18px;
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }

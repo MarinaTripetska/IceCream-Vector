@@ -117,6 +117,7 @@
       </li>
     </ul>
   </div>
+
   <div class="contacs__button">
     <div class="container">
       <button
@@ -148,13 +149,18 @@
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-          <div class="btn-close" data-easy-toggle="#modalmap" data-easy-class="show">Close</div>
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
         </div>
         <div class="overlay" data-easy-toggle="#modalmap" data-easy-class="show"></div>
       </div>
       <div id="modalFranchise" class="modal">
-        <div class="modal-window">
-          <h3 class="ey-modal-title">Модельное окно!</h3>
+        <div class="modal-window-two">
+          <h3 class="ey-modal-title">Franchise!</h3>
           <p class="ey-modal-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis, earum
             cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat
@@ -165,9 +171,12 @@
             cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat
             maxime fugiat eos ipsa. Consectetur, aperiam dignissimos!
           </p>
-          <div class="btn-close" data-easy-toggle="#modalFranchise" data-easy-class="show">
-            Close
-          </div>
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
         </div>
         <div class="overlay" data-easy-toggle="#modalFranchise" data-easy-class="show"></div>
       </div>
