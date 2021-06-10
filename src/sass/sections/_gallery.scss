@@ -4,25 +4,25 @@
   background-position: center;
   background-size: cover;
 }
-.gallery__wrap {
+/*.gallery__wrap {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-}
+}*/
 
-.gallery-image img {
+.gallery__image img {
   width: 110vw;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
     width: 105vw;
+    max-width: 786px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 100vw;
+    max-width: 1200px;
   }
 }
