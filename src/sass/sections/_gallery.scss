@@ -19,7 +19,8 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    width: 105vw;
+    //width: 105vw;
+    max-width: 786px;
   }
 
   @media screen and (min-width: 1200px) {
