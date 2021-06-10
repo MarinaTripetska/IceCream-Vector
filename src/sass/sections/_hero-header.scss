@@ -25,6 +25,7 @@
   @include flex-container;
   flex-wrap: nowrap;
   justify-content: space-between;
+  overflow: hidden;
 }
 .header__wraper--item {
   flex-grow: 1;
@@ -92,8 +93,16 @@
 }
 
 .menu__container {
+  @media screen and(max-width: 767px) {
+    right: -500px;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    top: -1000px;
+  }
   @media screen and(max-width: 1199px) {
-    display: none;
+    position: fixed;
+
+    // display: none;
   }
   @media screen and(min-width: 1200px) {
     @include flex-container;
@@ -120,7 +129,11 @@
 
   background-color: $header-menu-bg;
   z-index: 35;
-  @media screen and (min-width: 768px) {
+  @media screen and(max-width: 767px) {
+    transition: right 1000ms $animation-timing-function;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    transition: top 1000ms $animation-timing-function;
     position: fixed;
     width: 254px;
   }
