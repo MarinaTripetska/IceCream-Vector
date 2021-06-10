@@ -181,7 +181,7 @@
   padding: 10px 50px 12px 0;
 
   color: $text-cl-white;
-
+  transition: color $animation-duration $animation-timing-function;
   &:hover,
   &:focus {
     color: $text-cl-red;
@@ -217,6 +217,9 @@
   background-color: $pink-bg;
   border: 1px solid $header-bg;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  transition: background-color $animation-duration $animation-timing-function;
+
   &:hover,
   &:focus {
     background-color: $header-bg;

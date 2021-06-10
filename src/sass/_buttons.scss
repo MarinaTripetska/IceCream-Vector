@@ -16,8 +16,11 @@
   border: 0;
   border-radius: 22px;
 
-  background: $btn-white-bg;
+  background-color: $btn-white-bg;
   color: $text-cl-red;
+
+  transition: background-color $animation-duration $animation-timing-function;
+
   &::after {
     content: '';
     display: inline-block;
@@ -29,7 +32,7 @@
   }
   &:hover,
   &:focus {
-    background: $btn-white-bg--hover;
+    background-color: $btn-white-bg--hover;
   }
 }
 .button-arrow--red {
@@ -47,8 +50,11 @@
 
   border: 0;
   border-radius: 22px;
-  background: $btn-red-bg;
+  background-color: $btn-red-bg;
   color: $text-cl-white;
+
+  transition: background-color $animation-duration $animation-timing-function;
+
   &::after {
     content: '';
     display: inline-block;
@@ -60,7 +66,7 @@
   }
   &:hover,
   &:focus {
-    background: $btn-red-bg--hover;
+    background-color: $btn-red-bg--hover;
   }
 }
 // Кнопка со стрелочкой
@@ -70,11 +76,12 @@
   height: 40px;
   border-radius: 50%;
   border: 0;
-  background: $btn-white-bg;
+  background-color: $btn-white-bg;
+  transition: background-color $animation-duration $animation-timing-function;
 
   &:hover,
   &:focus {
-    background: $btn-white-bg--hover;
+    background-color: $btn-white-bg--hover;
   }
 }
 
@@ -91,8 +98,11 @@
   border-radius: 20px;
   border: 0;
 
-  background: $btn-white-bg;
+  background-color: $btn-white-bg;
   color: $text-cl-red;
+
+  transition: background-color $animation-duration $animation-timing-function;
+
   @media screen and (min-width: 1200px) {
     height: 40px;
     width: 138px;
@@ -102,7 +112,7 @@
 
   &:focus,
   &:hover {
-    background: $btn-white-bg--hover;
+    background-color: $btn-white-bg--hover;
   }
 }
 .button__small--red {
@@ -117,6 +127,8 @@
 
   background-color: $btn-red-bg;
   color: $text-cl-white;
+  transition: background-color $animation-duration $animation-timing-function;
+
   @media screen and (min-width: 1200px) {
     height: 40px;
     width: 104px;
@@ -125,6 +137,6 @@
   }
   &:hover,
   &:focus {
-    background: $btn-red-bg--hover;
+    background-color: $btn-red-bg--hover;
   }
 }
