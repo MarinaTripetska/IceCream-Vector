@@ -1,39 +1,68 @@
 // Основные кнопки
 
-.button--arrow {
-  padding: 12px 48px;
-  background: $btn-white-bg;
-  border-radius: 22px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  border: 0;
-  color: $text-cl-red;
+.button-arrow--white {
+  @include flex-container;
+  justify-content: space-around;
 
+  padding: 0 17px;
+  width: 100%;
+  height: 44px;
+
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  text-align: center;
+
+  border: 0;
+  border-radius: 22px;
+
+  background: $btn-white-bg;
+  color: $text-cl-red;
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: 8px;
+    width: 0.7em;
+    height: 0.7em;
+    background-image: url(../images/arrow-red.svg);
+    background-repeat: no-repeat;
+  }
   &:hover,
   &:focus {
     background: $btn-white-bg--hover;
   }
+}
+.button-arrow--red {
+  @include flex-container;
+  justify-content: space-around;
 
-  &--red {
-    background: $btn-red-bg;
-    color: $text-cl-white;
+  padding: 0 17px;
+  width: 100%;
+  height: 44px;
 
-    &:hover,
-    &:focus {
-      background: $btn-red-bg--hover;
-    }
-  }
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  text-align: center;
 
+  border: 0;
+  border-radius: 22px;
+  background: $btn-red-bg;
+  color: $text-cl-white;
   &::after {
-    content: '>';
-    color: currentColor;
-    padding-left: 15px;
+    content: '';
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    background-image: url(../images/arrow-white.svg);
+    margin-left: 8px;
+    background-repeat: no-repeat;
+  }
+  &:hover,
+  &:focus {
+    background: $btn-red-bg--hover;
   }
 }
-
 // Кнопка со стрелочкой
 
 .button--circle {
@@ -51,36 +80,51 @@
 
 // Кнопки в хедере
 
-.button__small {
-  padding: 9px 15px;
+.button__small--white {
+  @include flex-container;
+  justify-content: center;
+
+  height: 24px;
+  padding: 0 10px;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   border-radius: 20px;
   border: 0;
+
   background: $btn-white-bg;
   color: $text-cl-red;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-
   @media screen and (min-width: 1200px) {
-    padding: 11px 21px;
+    height: 40px;
+    width: 138px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
   }
 
   &:focus,
   &:hover {
     background: $btn-white-bg--hover;
   }
+}
+.button__small--red {
+  @include flex-container;
+  justify-content: center;
+  height: 24px;
+  padding: 0 10px;
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+  border: 0;
 
-  &--red {
-    background-color: $btn-red-bg;
-    color: $text-cl-white;
-
-    &:hover,
-    &:focus {
-      background: $btn-red-bg--hover;
-    }
+  background-color: $btn-red-bg;
+  color: $text-cl-white;
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 104px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  &:hover,
+  &:focus {
+    background: $btn-red-bg--hover;
   }
 }

@@ -1,0 +1,598 @@
+.header__section {
+  padding-top: 6px;
+  background-color: $header-bg;
+  @media screen and(min-width: 767px) {
+    padding-top: 38px;
+  }
+}
+
+.header__container {
+  @extend %container;
+  overflow: hidden;
+  position: relative;
+}
+.logo {
+  max-width: 199px;
+  @media screen and(min-width:1200px) {
+    position: relative;
+    left: -70px;
+  }
+}
+.header__logo {
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+  }
+}
+.header__wraper {
+  @include flex-container;
+  justify-content: space-between;
+}
+
+.menu-btn {
+  display: inline-flex;
+
+  position: relative;
+  z-index: 36;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  @media screen and(min-width: 768px) {
+    right: 190px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: none;
+  }
+}
+.menu-btn__icon {
+  width: 20px;
+  height: 14px;
+}
+.menu-btn__icon--menu {
+  fill: $btn-red-bg;
+}
+
+.menu-btn__icon--close {
+  fill: $btn-white-bg;
+}
+//   .menu-btn:hover .menu-btn__icon--close,
+//   .menu-btn:focus .menu-btn__icon--menu {
+
+//     // transition: fill $animation-timing-function $animation-duration;
+//   }
+.menu-btn .menu-btn__icon--close {
+  display: none;
+}
+.menu-btn.is-open .menu-btn__icon--close {
+  display: block;
+}
+.menu-btn.is-open .menu-btn__icon--menu {
+  display: none;
+}
+
+.menu__container {
+  @media screen and(max-width: 1199px) {
+    display: none;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      overflow-y: scroll;
+
+      padding: 23px 20px;
+
+      background-color: $header-menu-bg;
+      z-index: 35;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    // @include flex-container;
+    // justify-content: space-between;
+    flex-grow: 2;
+  }
+}
+.menu-wraper {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and(min-width:450px) {
+  }
+  @media screen and(min-width:1200px) {
+    @include flex-container;
+    justify-content: space-between;
+  }
+  //
+}
+.navigation {
+  padding-top: 100px;
+  @media screen and(min-width:768px) {
+    padding-top: 123px;
+  }
+  @media screen and(min-width: 1200px) {
+    @include flex-container;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+.navigation__list {
+  @extend %list;
+  @media screen and(max-width:1199px) {
+    border-top: 1px solid #e18298;
+  }
+  @media screen and(min-width:1200px) {
+    @include flex-container;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
+.navigation__item {
+  height: 41px;
+  @media screen and(max-width:1199px) {
+    border-bottom: 1px solid #e18298;
+  }
+  &:not(:last-child) {
+    @media screen and(min-width:1200px) {
+      margin-right: 35px;
+    }
+  }
+}
+.navigation__link {
+  @extend %link;
+  @media screen and(max-width:1199px) {
+    display: block;
+  }
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+
+  padding: 10px 50px 12px 0;
+
+  color: $text-cl-white;
+
+  &:hover,
+  &:focus {
+    color: $text-cl-red;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 1.31;
+    padding: 10px 0;
+  }
+}
+.navigation__link--current {
+  color: $text-cl-red;
+}
+.btn-header__container {
+  display: block;
+  width: 100%;
+  max-width: 209px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  @media screen and(min-width:768px) {
+    max-width: 186px;
+  }
+
+  @media screen and(min-width:1200px) {
+    max-width: 159px;
+  }
+}
+.menu-btn.is-open .btn-header__container--display {
+  display: none;
+}
+.btn-header__container--display {
+  position: absolute;
+  top: 0;
+  right: 34px;
+  // transform: translateX(-50%);
+  width: 100%;
+  max-width: 160px;
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  @media screen and(min-width:1200px) {
+    display: none;
+  }
+}
+
+.header__bg {
+  position: relative;
+
+  padding-top: 137px;
+  min-height: 446px;
+  @media screen and(min-width:768px) {
+    padding-top: 15px;
+    min-height: 317px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-top: 84px;
+    min-height: 583px;
+    // padding-bottom: 30px;
+  }
+}
+
+.header__bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 171px;
+  max-height: 410px;
+  background-image: url('../images/hero-header/icecream-mobile@1x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  // background-position: 0 0;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-header/hero-header-icecream-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    right: 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 213px;
+
+    max-width: 143px;
+    max-height: 336px;
+
+    background-image: url('../images/hero-header/hero-header-icecream-leptop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-icecream-leptop@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 335px;
+
+    max-width: 236px;
+    max-height: 557px;
+
+    background-image: url('../images/hero-header/hero-header-icecream-desctop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-icecream-desctop@2x.png');
+    }
+  }
+}
+
+.circle {
+  position: absolute;
+
+  right: -35px;
+  top: 27px;
+
+  width: 284px;
+  height: 345px;
+
+  @media screen and (min-width: 480px) {
+    right: 0;
+    top: 35px;
+
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 93px;
+    top: -40px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 538px;
+    height: 538px;
+
+    right: 120px;
+    top: -10px;
+  }
+}
+
+.circle:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+
+  background-image: url('../images/hero-header/ellipse@1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: right -20pxpx bottom 0px;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/hero-header/ellipse@2x.png');
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 324px;
+    height: 322px;
+    background-image: url('../images/hero-header/ellipse-tablet@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/ellipse-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 538px;
+    height: 538px;
+    background-image: url('../images/hero-header/elipse-desktop@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/elipse-desktop@2x.png');
+    }
+  }
+}
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.banner__position {
+  position: relative;
+  z-index: 30;
+  @include flex-container;
+  justify-content: space-between;
+  align-items: start;
+  @media screen and(min-width:768px) {
+    margin-bottom: 66px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 112px;
+  }
+}
+
+.main-title {
+  font-family: Titan One;
+
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-cl-white;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.16;
+  }
+}
+.main-title__span {
+  font-size: 2em;
+  color: $text-cl-red;
+}
+.main-title--margin-b {
+  margin-bottom: 19px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 25px;
+  }
+}
+
+.button__smal--container {
+  @include flex-container;
+}
+.button__small--margin {
+  margin-right: 9px;
+  @media screen and(min-width:1200px) {
+    margin-right: 15px;
+  }
+}
+.achievement__list {
+  @extend %list;
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+}
+.achievement__item {
+  position: relative;
+  z-index: 10;
+  @include flex-container;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: $text-cl-white;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.achievement__item--margin-b {
+  margin-bottom: 14px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 18px;
+  }
+}
+.achievement__number {
+  font-family: Titan One;
+  // font-style: normal;
+  // font-weight: normal;
+  font-size: 28px;
+  line-height: 1.14;
+
+  letter-spacing: 0.04em;
+
+  color: $text-cl-red;
+  @media screen and(min-width:1200px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 35px;
+    background-color: #fff;
+    @media screen and(min-width:1200px) {
+      width: 30px;
+      height: 30px;
+      top: -3px;
+      left: 60px;
+    }
+  }
+}
+
+.banner__txt {
+  position: relative;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: block;
+    width: 114px;
+
+    font-size: 8px;
+    line-height: 1.5;
+
+    color: $text-cl-white;
+
+    @media screen and(min-width:1200px) {
+      width: 200px;
+
+      font-size: 14px;
+      line-height: 1.43;
+    }
+  }
+}
+.banner__txt::before {
+  content: '';
+  position: absolute;
+
+  left: -120px;
+  top: -50px;
+
+  width: 124px;
+  height: 126px;
+
+  background-image: url(../images/hero-header/hero-header-milk-leptop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero-header/hero-header-milk-leptop@2x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: -230px;
+    top: -80px;
+
+    width: 188px;
+    height: 191px;
+
+    background-image: url(../images/hero-header/hero-header-milk-desctop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-header/hero-header-milk-desctop@2x.png);
+    }
+  }
+}
+.banner__txt::after {
+  @media screen and(min-width:768px) {
+    content: '';
+    position: absolute;
+    left: 430px;
+    bottom: -45px;
+
+    width: 168px;
+    height: 133px;
+    background-image: url('../images/hero-header/hero-header-girl-leptop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-leptop@2x.png');
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    left: 550px;
+    bottom: -66px;
+
+    width: 293px;
+    height: 232px;
+    background-image: url('../images/hero-header/hero-header-girl-desctop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/hero-header/hero-header-girl-desctop@2x.png');
+    }
+  }
+}
+.banner__txt-position {
+  margin-left: 120px;
+  @media screen and(min-width:1200px) {
+    margin-left: 220px;
+  }
+}
