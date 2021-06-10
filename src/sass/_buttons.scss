@@ -15,7 +15,7 @@
 
   border: 0;
   border-radius: 22px;
-
+  cursor: pointer;
   background-color: $btn-white-bg;
   color: $text-cl-red;
 
@@ -52,7 +52,7 @@
   border-radius: 22px;
   background-color: $btn-red-bg;
   color: $text-cl-white;
-
+  cursor: pointer;
   transition: background-color $animation-duration $animation-timing-function;
 
   &::after {
@@ -78,7 +78,7 @@
   border: 0;
   background-color: $btn-white-bg;
   transition: background-color $animation-duration $animation-timing-function;
-
+  cursor: pointer;
   &:hover,
   &:focus {
     background-color: $btn-white-bg--hover;
@@ -97,7 +97,7 @@
   line-height: 1.25;
   border-radius: 20px;
   border: 0;
-
+  cursor: pointer;
   background-color: $btn-white-bg;
   color: $text-cl-red;
 
@@ -124,7 +124,7 @@
   line-height: 1.25;
   border-radius: 20px;
   border: 0;
-
+  cursor: pointer;
   background-color: $btn-red-bg;
   color: $text-cl-white;
   transition: background-color $animation-duration $animation-timing-function;
