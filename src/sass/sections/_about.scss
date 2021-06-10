@@ -225,6 +225,7 @@
   line-height: 1.17;
   font-weight: 700;
   text-align: left;
+  padding: 10px;
 }
 .modal__close {
   position: absolute;
@@ -266,6 +267,6 @@
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal-about {
+.backdrop.is-hidden .modal-about .modal-icecream .modal-icecoffee .modal-milkshakes {
   transform: translate(-50%, -50%) scale(0.5);
 }

@@ -2,52 +2,134 @@
   <div class="container">
     <p class="product__label">100% natural</p>
 
-    <h1 class="product__title">products</h1>
+    <h2 class="product__title">products</h2>
     <ul class="list product__list">
       <!-- first card -->
       <li class="product__item item--bgicecream">
         <div class="product__img--icecream"></div>
-        <h2 class="product__item--title">ice cream</h2>
+        <h3 class="product__item--title">ice cream</h3>
 
         <p class="product__item--text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="button--circle" type="button">
+        <button data-modal-open class="button--circle" type="button">
           <svg width="10.7px" height="9.4px">
             <use href="./images/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
       </li>
+      <!-- backdrop  -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-icecream">
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li class="modal__text">
+              Milk lightens ice cream because of its proteins, which are superior to fat at trapping
+              air (though not as good at holding it).
+            </li>
+            <li class="modal__text">
+              This, by the way, is why skim milk foams up better than whole milk for cappuccino.
+            </li>
+            <li class="modal__text">
+              Milk also contributes to smoothness, thanks to its high concentration of milk solids
+              (such as calcium salts and lactose), which are even more effective than fat at
+              controlling crystal size.
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- second card -->
       <li class="product__item item--bgicecoffee">
         <div class="product__img--icecoffee"></div>
-        <h2 class="product__item--title">ice coffee</h2>
+        <h3 class="product__item--title">ice coffee</h3>
         <p class="product__item--text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="button--circle" type="button">
+        <button data-modal-open class="button--circle" type="button">
           <svg width="10.7px" height="9.4px">
             <use href="./images/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
       </li>
+      <!-- backdrop  -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-icecoffee">
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li class="modal__text">
+              Milk lightens ice cream because of its proteins, which are superior to fat at trapping
+              air (though not as good at holding it).
+            </li>
+            <li class="modal__text">
+              This, by the way, is why skim milk foams up better than whole milk for cappuccino.
+            </li>
+            <li class="modal__text">
+              Milk also contributes to smoothness, thanks to its high concentration of milk solids
+              (such as calcium salts and lactose), which are even more effective than fat at
+              controlling crystal size.
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- third card -->
       <li class="product__item item--bgmilkshakes">
         <div class="product__img--milkshakes"></div>
-        <h2 class="product__item--title">milkshakes</h2>
+        <h3 class="product__item--title">milkshakes</h3>
 
         <p class="product__item--text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="button--circle" type="button">
+        <button data-modal-open class="button--circle" type="button">
           <svg width="10.7px" height="9.4px">
             <use href="./images/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
       </li>
+      <!-- backdrop  -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-milkshakes">
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list">
+            <li class="modal__text">
+              Ice cream (derived from earlier cream ice)[1] is a sweetened frozen food typically
+              eaten as a snack or dessert.
+            </li>
+            <li class="modal__text">
+              It may be made from dairy milk or cream and is flavoured with a sweetener, either
+              sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit such as
+              strawberries or peaches. It can also be made by whisking a flavored cream base and
+              liquid nitrogen together.
+            </li>
+            <li class="modal__text">
+              Colorings are sometimes added, in addition to stabilizers. The mixture is cooled below
+              the freezing point of water and stirred to incorporate air spaces and to prevent
+              detectable ice crystals from forming.
+            </li>
+            <li class="modal__text">
+              The result is a smooth, semi-solid foam that is solid at very low temperatures (below
+              2 °C or 35 °F). It becomes more malleable as its temperature increases.
+            </li>
+          </ul>
+        </div>
+      </div>
     </ul>
   </div>
 </section>
