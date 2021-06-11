@@ -50,13 +50,14 @@
   text-align: center;
   letter-spacing: 0.04em;
   z-index: 5;
+
   background-image: linear-gradient(
     0deg,
-    #e1e1e1 1%,
+    $ft-line 1%,
     transparent 1%,
     transparent 50%,
-    #e1e1e1 52%,
-    #e1e1e1 52%,
+    $ft-line 52%,
+    $ft-line 52%,
     transparent 50%,
     transparent 100%
   );
@@ -71,13 +72,14 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.86;
+
     background-image: linear-gradient(
       0deg,
-      #e1e1e1 1%,
+      $ft-line 1%,
       transparent 1%,
       transparent 50%,
-      #e1e1e1 53%,
-      #e1e1e1 53%,
+      $ft-line 53%,
+      $ft-line 53%,
       transparent 50%,
       transparent 100%
     );
@@ -98,9 +100,9 @@
     background-size: contain;
     z-index: -5;
 
-    /*@media screen and (min-width: 480px) {
-      left: -15px;
-    }*/
+    @media screen and (min-width: 1200px) {
+      left: -20px;
+    }
   }
 }
 
