@@ -9,7 +9,10 @@
 
 .header__container {
   @extend %container;
-  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+
   // position: relative;
 }
 .logo {
@@ -25,13 +28,14 @@
   @include flex-container;
   flex-wrap: nowrap;
   justify-content: space-between;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .header__wraper--item {
   flex-grow: 1;
   @include flex-container;
   justify-content: flex-end;
 }
+
 .menu-btn {
   display: inline-flex;
 
@@ -208,9 +212,9 @@
     padding: 10px 0;
   }
 }
-// .navigation__link--current {
-//   color: $text-cl-red;
-// }
+.navigation__link--current {
+  color: $text-cl-red;
+}
 
 .navigation__item--btn {
   position: fixed;
