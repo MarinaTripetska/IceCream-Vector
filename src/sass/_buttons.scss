@@ -1,0 +1,142 @@
+// Основные кнопки
+
+.button-arrow--white {
+  @include flex-container;
+  justify-content: space-around;
+
+  padding: 0 17px;
+  width: 100%;
+  height: 44px;
+
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  text-align: center;
+
+  border: 0;
+  border-radius: 22px;
+  cursor: pointer;
+  background-color: $btn-white-bg;
+  color: $text-cl-red;
+
+  transition: background-color $animation-duration $animation-timing-function;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-left: 8px;
+    width: 0.7em;
+    height: 0.7em;
+    background-image: url(../images/arrow-red.svg);
+    background-repeat: no-repeat;
+  }
+  &:hover,
+  &:focus {
+    background-color: $btn-white-bg--hover;
+  }
+}
+.button-arrow--red {
+  @include flex-container;
+  justify-content: space-around;
+
+  padding: 0 17px;
+  width: 100%;
+  height: 44px;
+
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  text-align: center;
+
+  border: 0;
+  border-radius: 22px;
+  background-color: $btn-red-bg;
+  color: $text-cl-white;
+  cursor: pointer;
+  transition: background-color $animation-duration $animation-timing-function;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    background-image: url(../images/arrow-white.svg);
+    margin-left: 8px;
+    background-repeat: no-repeat;
+  }
+  &:hover,
+  &:focus {
+    background-color: $btn-red-bg--hover;
+  }
+}
+// Кнопка со стрелочкой
+
+.button--circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: $btn-white-bg;
+  transition: background-color $animation-duration $animation-timing-function;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $btn-white-bg--hover;
+  }
+}
+
+// Кнопки в хедере
+
+.button__small--white {
+  @include flex-container;
+  justify-content: center;
+
+  height: 24px;
+  padding: 0 10px;
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: $btn-white-bg;
+  color: $text-cl-red;
+
+  transition: background-color $animation-duration $animation-timing-function;
+
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 138px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $btn-white-bg--hover;
+  }
+}
+.button__small--red {
+  @include flex-container;
+  justify-content: center;
+  height: 24px;
+  padding: 0 10px;
+  font-size: 8px;
+  line-height: 1.25;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: $btn-red-bg;
+  color: $text-cl-white;
+  transition: background-color $animation-duration $animation-timing-function;
+
+  @media screen and (min-width: 1200px) {
+    height: 40px;
+    width: 104px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  &:hover,
+  &:focus {
+    background-color: $btn-red-bg--hover;
+  }
+}

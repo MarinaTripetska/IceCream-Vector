@@ -1,0 +1,391 @@
+.contacts__section {
+  padding-top: 43px;
+  padding-bottom: 56px;
+  background-image: linear-gradient(to bottom, $white-bg 8%, $pink-bg 8%);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 82px;
+    background-image: linear-gradient(to bottom, $white-bg 15%, $pink-bg 15%);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 66px;
+  }
+}
+.contacts__container {
+  @extend %container;
+}
+.contacts__list {
+  @extend %list;
+  @include flex-container;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+.contacts__list--margin {
+  margin-bottom: 54px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 86px;
+  }
+}
+
+.contacts__card {
+  width: 100%;
+  max-width: 220px;
+
+  padding: 43px 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  border-radius: 24px;
+
+  background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 31px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 330px;
+    padding: 52px 43px 61px 43px;
+  }
+
+  &:not(:last-child) {
+    @media screen and(max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card__lable {
+  width: fit-content;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-radius: 6px;
+  }
+
+  .card__lable-txt {
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $text-cl-white;
+
+    @media screen and(min-width:768px) {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
+}
+.card__lable--color1 {
+  background: #f0d1a5;
+}
+.card__lable--color2 {
+  background: #c2e297;
+}
+.card__part-top {
+  padding: 25px 0;
+  border-bottom: 1px solid $ft-line;
+  @media screen and(min-width:768px) {
+    padding: 30px 0;
+  }
+  @media screen and(min-width:1200px) {
+    padding: 32px 0;
+  }
+}
+
+.card__city {
+  font-weight: 500;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+  }
+}
+.card__city--margin-b {
+  margin-bottom: 10px;
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-bottom: 14px;
+  }
+}
+.card__txt {
+  font-weight: 500;
+  line-height: 1.5;
+  color: $text-cl-grey;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+    letter-spacing: 0.04em;
+  }
+}
+
+.card__part-middle {
+  padding: 25px 0;
+  border-bottom: 1px solid $ft-line;
+  @media screen and(min-width:768px) {
+    padding: 30px 0;
+  }
+  @media screen and(min-width:1200px) {
+    padding: 32px 0;
+  }
+}
+.schedule--margin-b {
+  margin-bottom: 10px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 16px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 15px;
+  }
+}
+.card__days {
+  font-weight: 500;
+  line-height: 1.86;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+  }
+}
+.card__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  color: $text-cl-pink;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+  }
+}
+
+.card__part-bottom {
+  padding-top: 25px;
+  @media screen and(min-width:768px) {
+    padding-top: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 32px;
+  }
+}
+.card__link {
+  @extend %link;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $text-cl-grey;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
+}
+
+.contacs__btn-list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.contacs__btn-item {
+  width: 100%;
+  max-width: 162px;
+  @media screen and(max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and(min-width: 768px) {
+    &:not(:last-child) {
+      max-width: 199px;
+      margin-right: 15px;
+    }
+    &:last-child {
+      max-width: 174px;
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    &:not(:last-child) {
+      max-width: 198px;
+    }
+    &:last-child {
+      max-width: 180px;
+    }
+  }
+}
+
+// Модельное окно
+.modal__map-overlay.is-hidden-map,
+.modal__franchise-overlay.is-hidden-franchise {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal__map-overlay,
+.modal__franchise-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 94px 15px;
+  background-color: #e1799250;
+
+  opacity: 1;
+  transition: opacity $animation-duration $animation-timing-function,
+    visibility $animation-duration $animation-timing-function;
+
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.modal__franchise-overlay.is-hidden-franchise .modal__franchise,
+.modal__map-overlay.is-hidden-map .modal__map {
+  transform: translate(-50%, -50%) rotate(90deg) scale(2);
+  opacity: 0;
+}
+.modal__map,
+.modal__franchise {
+  position: relative;
+  width: 100%;
+
+  max-width: 450px;
+
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: #ffffff;
+  opacity: 1;
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  transform: rotate(0) scale(1);
+  transition: transform $animation-duration $animation-timing-function,
+    opacity $animation-duration $animation-timing-function;
+}
+
+.modal__map {
+  max-height: 300px;
+  height: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    max-height: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1050px;
+    max-height: 600px;
+  }
+}
+.modal__franchise {
+  padding: 20px;
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1050px;
+  }
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
+.modal__btn-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  top: 10px;
+
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background-color: $icon-bg;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $icon-bg--hover;
+  }
+}
+.contacts__modal-icon {
+  width: 18px;
+  height: 18px;
+}
+.map {
+  object-fit: contain;
+}
+
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+
+  @media screen and(min-width: 767px) {
+    font-size: 20px;
+    line-height: 166%;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 22px;
+    line-height: 190%;
+    letter-spacing: 0.04em;
+  }
+}
+.modal-text {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7;
+
+  @media screen and(min-width: 767px) {
+    font-size: 20px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+}
