@@ -118,7 +118,7 @@
     </ul>
   </div>
 
-  <div class="container">
+ <div class="container">
     <ul class="contacs__btn-list">
       <li class="contacs__btn-item">
         <button
@@ -141,38 +141,53 @@
         </button>
       </li>
     </ul>
-    <!-- Модельное окно -->
-    <div id="modalmap" class="modal">
-      <div class="modal-window">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5104.162532370794!2d28.695104832668466!3d50.23438668270908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c6373bd6903e7%3A0x5c4aa94d263c8c11!2z0JbQuNGC0L7QvNC40YDRgdC60LjQuSDQnNCw0YHQu9C-0LfQsNCy0L7QtCDQotCcICLQoNGD0LTRjCIsINCn0JDQng!5e0!3m2!1sru!2sua!4v1623258230871!5m2!1sru!2sua"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-        <div class="btn-close" data-easy-toggle="#modalmap" data-easy-class="show">Close</div>
+
+
+      <!-- Модельное окно -->
+      <div id="modalmap" class="modal">
+        <div class="modal-window">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5104.162532370794!2d28.695104832668466!3d50.23438668270908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c6373bd6903e7%3A0x5c4aa94d263c8c11!2z0JbQuNGC0L7QvNC40YDRgdC60LjQuSDQnNCw0YHQu9C-0LfQsNCy0L7QtCDQotCcICLQoNGD0LTRjCIsINCn0JDQng!5e0!3m2!1sru!2sua!4v1623258230871!5m2!1sru!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="overlay" data-easy-toggle="#modalmap" data-easy-class="show"></div>
       </div>
-      <div class="overlay" data-easy-toggle="#modalmap" data-easy-class="show"></div>
-    </div>
-    <div id="modalFranchise" class="modal">
-      <div class="modal-window">
-        <h3 class="ey-modal-title">Модельное окно!</h3>
-        <p class="ey-modal-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis, earum
-          cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat maxime
-          fugiat eos ipsa. Consectetur, aperiam dignissimos!
-        </p>
-        <p class="ey-modal-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis, earum
-          cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat maxime
-          fugiat eos ipsa. Consectetur, aperiam dignissimos!
-        </p>
-        <div class="btn-close" data-easy-toggle="#modalFranchise" data-easy-class="show">Close</div>
+      <div id="modalFranchise" class="modal">
+        <div class="modal-window-two">
+          <h3 class="ey-modal-title">Franchise!</h3>
+          <p class="ey-modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis, earum
+            cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat
+            maxime fugiat eos ipsa. Consectetur, aperiam dignissimos!
+          </p>
+          <p class="ey-modal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis, earum
+            cupiditate obcaecati vel in vitae officia nihil praesentium id, quod quasi repellat
+            maxime fugiat eos ipsa. Consectetur, aperiam dignissimos!
+          </p>
+          <button data-modal-close type="button" class="modal__close">
+            <svg class="modal__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="overlay" data-easy-toggle="#modalFranchise" data-easy-class="show"></div>
+
       </div>
       <div class="overlay" data-easy-toggle="#modalFranchise" data-easy-class="show"></div>
     </div>
-  </div>
+
 </section>
