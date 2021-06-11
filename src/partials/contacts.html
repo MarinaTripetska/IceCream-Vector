@@ -1,7 +1,7 @@
 <section id="contacts" class="contacts contacts__section">
   <div class="contacts__container">
     <h2 class="visually-hidden">Contacts</h2>
-    <ul class="contacts__list">
+    <ul class="contacts__list contacts__list--margin">
       <li class="contacts__card">
         <article>
           <p class="card__lable card__lable--color1"><span class="card__lable-txt">Cafe</span></p>
@@ -31,9 +31,9 @@
           </div>
           <div class="card__part-bottom">
             <ul class="list">
-              <li><a class="card__txt link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+              <li><a class="card__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
               <li>
-                <a class="card__txt link" href="mailto:noreply@envato.com"> jnoreply@envato.com</a>
+                <a class="card__link" href="mailto:noreply@envato.com"> jnoreply@envato.com</a>
               </li>
             </ul>
           </div>
@@ -70,9 +70,9 @@
           </div>
           <div class="card__part-bottom">
             <ul class="list">
-              <li><a class="card__txt link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+              <li><a class="card__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
               <li>
-                <a class="card__txt link" href="mailto:noreply@envato.com"> jnoreply@envato.com</a>
+                <a class="card__link" href="mailto:noreply@envato.com"> jnoreply@envato.com</a>
               </li>
             </ul>
           </div>
@@ -107,9 +107,9 @@
           </div>
           <div class="card__part-bottom">
             <ul class="list">
-              <li><a class="card__txt link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
+              <li><a class="card__link" href="tel:+610383766284">+61(0) 383 766 284</a></li>
               <li>
-                <a class="card__txt link" href="mailto:noreply@envato.com"> jnoreply@envato.com</a>
+                <a class="card__link" href="mailto:noreply@envato.com"> jnoreply@envato.com</a>
               </li>
             </ul>
           </div>
@@ -118,24 +118,30 @@
     </ul>
   </div>
 
-  <div class="contacs__button">
-    <div class="container">
-      <button
-        data-easy-toggle="#modalmap"
-        data-easy-class="show"
-        class="button--arrow button--arrow--red"
-        type="button"
-      >
-        Our Locations
-      </button>
-      <button
-        data-easy-toggle="#modalFranchise"
-        data-easy-class="show"
-        class="button--arrow btn__contacs"
-        type="button"
-      >
-        Franchise
-      </button>
+ <div class="container">
+    <ul class="contacs__btn-list">
+      <li class="contacs__btn-item">
+        <button
+          data-easy-toggle="#modalmap"
+          data-easy-class="show"
+          class="button-arrow--red"
+          type="button"
+        >
+          Our Locations
+        </button>
+      </li>
+      <li class="contacs__btn-item">
+        <button
+          data-easy-toggle="#modalFranchise"
+          data-easy-class="show"
+          class="button-arrow--white"
+          type="button"
+        >
+          Franchise
+        </button>
+      </li>
+    </ul>
+
 
       <!-- Модельное окно -->
       <div id="modalmap" class="modal">
@@ -179,7 +185,9 @@
           </button>
         </div>
         <div class="overlay" data-easy-toggle="#modalFranchise" data-easy-class="show"></div>
+
       </div>
+      <div class="overlay" data-easy-toggle="#modalFranchise" data-easy-class="show"></div>
     </div>
-  </div>
+
 </section>

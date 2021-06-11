@@ -1,0 +1,109 @@
+<header class="header__section" id="hero-header">
+  <div class="header__container">
+    <div class="header__wraper">
+      <a class="logo" href="./index.html">
+        <picture>
+          <source
+            srcset="
+              images/hero-header/hero-header-logo.webp    1x,
+              images/hero-header/hero-header-logo@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              images/hero-header/hero-header-logo.png    1x,
+              images/hero-header/hero-header-logo@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="images/hero-header/hero-header-logo.png" alt="logo" />
+        </picture>
+      </a>
+      <div class="header__wraper--item">
+        <button
+          class="menu-btn menu-btn--margin"
+          type="button"
+          aria-controls="menu-container"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" aria-label="mobile menu switch">
+            <use class="menu-btn__icon--menu" href="images/sprite.svg#burger"></use>
+            <use class="menu-btn__icon--close" href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="menu__container" id="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list navigation__list--margin-b">
+              <li class="navigation__item">
+                <a class="navigation__link scrollto" href="#hero-header">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link scrollto" href="#products">About us</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link scrollto" href="#about">How it’s made?</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link scrollto" href="#advantages">Our products</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link scrollto" href="#contacts">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn-header__container">
+            <button class="button-arrow--white" type="button">Buy now</button>
+          </div>
+        </div>
+        <div class="btn-header__container--display">
+          <button class="button-arrow--white" type="button">Buy now</button>
+        </div>
+        <div class="navigation__item--btn">
+          <a class="navigation__link--btn scrollto" href="#hero-header"
+            ><svg class="navigation__icon--btn" width="35px">
+              <use href="images/sprite.svg#icon-arrow"></use></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- Banner -->
+    <div class="header__bg">
+      <div class="circle"></div>
+      <div class="banner__position">
+        <div>
+          <h1 class="main-title main-title--margin-b">
+            ice cream <br />
+            made with <br />
+            <span class="main-title__span">passion</span>
+          </h1>
+          <ul class="button__smal--container list">
+            <li>
+              <a class="button__small--red button__small--margin link scrollto" href="#products"
+                >Products</a
+              >
+            </li>
+            <li><a class="button__small--white link scrollto" href="#about">How it’s made?</a></li>
+          </ul>
+        </div>
+        <ul class="achievement achievement__list">
+          <li class="achievement__item achievement__item--margin-b">
+            <span class="achievement__number">16</span>cafes
+          </li>
+          <li class="achievement__item"><span class="achievement__number">23</span>food trucks</li>
+        </ul>
+      </div>
+
+      <div class="header-slider">
+        <div class="header-slider__item">
+          <p class="banner__txt banner__txt-position">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
